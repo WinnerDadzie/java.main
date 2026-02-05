@@ -1,0 +1,21 @@
+public class ClassAverage {
+
+    public static double calculateClassAverage(double mark1, double mark2) {
+        return (mark1 + mark2) / 2;
+    }
+
+    public static double calculateClassAverage(double mark1, double mark2, double mark3) {
+        return (mark1 + mark2 + mark3) / 3;
+    }
+
+    public static double calculateClassAverage(double[] marks) {
+
+        double total = 0;
+
+        for (int i = 0; i < marks.length; i++) {
+            total += marks[i];
+        }
+
+        return total / marks.length;
+    }
+}
